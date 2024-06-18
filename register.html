@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Here</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Logo.png" alt="">
+        <h2>RUNACOSS</h2>
+      </a>
+    </div>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+
+  <section class="register">
+    <center>
+      <section class="contact" id="contact">
+        <div class="title">
+          <h2 class="titleText"><span>R</span>egister <span>H</span>ere</h2>
+          <p>Join our community and expand your knowledge on Tech and advance into the future</p>
+        </div>
+        <form method="post" action="mail.php">
+          <div class="contactForm">
+            <h3>Let's have you in our space</h3>
+            <div class="inputBox">
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="inputBox">
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="inputBox">
+              <label for="number">Phone Number</label><br>
+              <input type="phone" id="number" name="number" placeholder="Phone Number" required>
+            </div>
+            <div class="inputBox">
+              <label for="age">Age</label><br>
+              <input type="number" id="age" name="age" min="1" max="80" placeholder="Age">
+            </div>
+            <div class="inputBox">
+              <label>Gender:</label>
+              <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <label for="department">Department: </label>
+              <select name="department" id="department" required>
+                <option value="computer">Computer Science</option>
+                <option value="cyber">Cybersecurity Science</option>
+                <option value="information">Information Science</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <label for="level">Level: </label>
+              <select name="level" id="level">
+                <option value="100">100Level</option>
+                <option value="200">200Level</option>
+                <option value="300">300Level</option>
+                <option value="400">400Level</option>
+                <option value="Pgd">Postgraduate</option>
+                <option value="Fd">Foundation</option>
+              </select>
+            </div>
+            <center>
+              <div class="inputBox">
+                <a href="#" class="btn" onclick="msg()">Register</a>
+              </div>
+            </center>
+            <center class="note">
+              <p>Note: New Members only!!</p>
+            </center>
+
+          </div>
+        </form>
+      </section>
+    </center>
+  </section>
+
+  <footer>
+    <div class="copyrightText">
+     <marquee behavior="" direction=""> <p>&copy; 2024 <a href="#">Adekoya Emmanuel </a>  All rights Reserved</p></marquee>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
